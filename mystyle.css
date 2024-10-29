@@ -3,6 +3,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
+@media (max-width: 1952px) {
+    .maincon{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .CONTACT {
+        grid-column: 1 / span 2;
+    }
+}
+
+@media (max-width: 1169px) {
+    .maincon{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .CONTACT {
+        grid-column: 1 / span 2;
+    }
+    .fieldset {
+        align-items: center;
+        width: auto;
+        
+    }
+    
+    
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
 body {
     background-color: #ad8b6d;
     background-repeat: no-repeat;
@@ -11,14 +43,7 @@ body {
 
 }
 
-#Chaloemwong {
-    width: 500px;
-    height: auto;
-    border: 5px double white;
-    box-shadow: 10px 10px #302929;
-    float: left;
-    overflow: auto;
-}
+
 
 .CONTACT {
     font-size: 20px;
@@ -26,26 +51,27 @@ body {
 }
 
 .cont {
-    margin: -30px;
+      margin: -30px;  
     padding-bottom: 40px;
     font-family: "Nunito Sans", sans-serif;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .fieldset {
     border: 5px solid rgb(179, 35, 25);
-    display: block;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 30px;
+    /* display: block; */
+    /* margin-left: 80px; */
+    /* margin-right: 50px; */
+    /* margin-bottom: 30px; */
     padding-top: 0px;
     padding-bottom: 2px;
     padding-left: 2em;
     padding-right: 1.5em;
     background-color: antiquewhite;
     box-shadow: 10px 10px;
-    float: right;
-    overflow: visible;
+    align-items: center;
+    /* float: right; */
+    /* overflow: visible; */
 }
 
 h1 {
@@ -79,18 +105,20 @@ td {
 }
 
 article {
-    float: right;
     margin-top: -45px;
     width: auto;
     overflow: auto;
 }
 
 .back {
-    float: left;
+    /* float: left; */
+    /* position: relative; */
     width: 30%;
     height: 300px;
-    padding-left: 200px;
+    /* padding-left: 200px; */
     margin-top: -10px;
+    margin-left: 15px;
+    
 }
 
 footer {
@@ -101,8 +129,8 @@ footer {
 .fiel {
     border: 5px solid rgb(179, 35, 25);
     display: block;
-    margin-left: 50px;
-    margin-right: 50px;
+    /* margin-left: 50px; */
+    /* margin-right: 50px; */
     margin-bottom: 30px;
     padding-top: 0px;
     padding-bottom: 0.625em;
@@ -110,11 +138,14 @@ footer {
     padding-right: 0.75em;
     background-color: antiquewhite;
     box-shadow: 10px 10px;
-    margin-top: 350px;
+    margin-top: -170px;
 }
 
 video {
-    padding-left: 19%;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    margin-left:-1px;
 }
 
 .N1 {
